@@ -1,0 +1,19 @@
+<%= form_tag "/sports/#{@sport['id']}", method: :patch do %>
+
+  <div>
+    <%= label_tag :name %>
+    <%= text_field_tag :name, @sport["name"] %>
+  </div>
+  
+  <div>
+    <%= label_tag :players%>
+    <%= text_field_tag :players, @sport["players"]%>
+  </div>
+  <div>
+    <%= label_tag :country_of_origin%>
+    <%= text_field_tag :country_of_origin, @sport["country_of_origin"]%>
+  </div>
+  
+  <%= submit_tag "submit" %>
+
+<% end %>
