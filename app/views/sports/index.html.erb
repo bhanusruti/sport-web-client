@@ -5,11 +5,11 @@
     <th>Country_of_origin</th>
   </tr>
 
-  <% @sports.each do |sport|%>
+  <% @new_sport_array.each do |sport|%>
   <tr>
-    <td><%= @sport["name"]%></td>
-    <td><%= @sport["players"] %></td>
-    <td><%= @sport["country_of_origin"] %></td>
+    <td><%= sport.name%></td>
+    <td><%= sport.players %></td>
+    <td><%= sport.country_of_origin%></td>
     <%end%>
   </tr>
 </table>
